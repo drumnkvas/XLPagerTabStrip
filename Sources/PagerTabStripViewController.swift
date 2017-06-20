@@ -289,7 +289,7 @@ open class PagerTabStripViewController: UIViewController, UIScrollViewDelegate {
             childController.removeFromParentViewController()
             childController.endAppearanceTransition()
         }
-        reloadViewControllers()
+        //reloadViewControllers()
         containerView.contentSize = CGSize(width: containerView.bounds.width * CGFloat(viewControllers.count), height: containerView.contentSize.height)
         if currentIndex >= viewControllers.count {
             currentIndex = viewControllers.count - 1
